@@ -1,0 +1,117 @@
+body {
+  font-family: monospace sans-serif Arial;
+  /* background: #1a1a1a; */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-image: url(360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg);
+  background-size: cover;
+}
+h2 {
+  text-align: center;
+}
+
+.password-box {
+  display: flex;
+  margin: 15px 0;
+}
+
+.password-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.password-box button {
+  padding: 10px;
+  background: #0f0f0f;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.settings label {
+  display: block;
+  margin: 8px 0;
+}
+
+.generate {
+  width: 100%;
+  padding: 7px;
+  background: #0f0f0f;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#copyBtn {
+  color: #fff;
+}
+
+.chk-container {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chk-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.chk-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.chk-container input:checked ~ .checkmark {
+  background-color: #0f0f0f;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.chk-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.chk-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.myImage {
+}
